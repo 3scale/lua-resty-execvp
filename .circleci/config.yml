@@ -5,7 +5,7 @@ jobs:
       - image: quay.io/3scale/s2i-openresty-centos7:master
         environment:
           ROVER: /usr/local/openresty/luajit/bin/rover
-    working_directory: /opt/app-root/src
+    working_directory: /opt/app-root/app
     steps:
       - checkout
       - restore_cache:
