@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+- Serializes ENV values when calling `setenv`.
+
 ## [0.1.0] - 2017-10-19
 
 Initial release.
