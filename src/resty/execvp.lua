@@ -45,7 +45,7 @@ local function execvp(filename, args, env)
   local cargv = ffi.cast("char *const*", argv)
 
   for name, value in pairs(env or {}) do
-    assert(setenv(name, value))
+    assert(setenv(name, tostring(value)))
   end
 
   C.execvp(filename, cargv)
